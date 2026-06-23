@@ -1,0 +1,326 @@
+/* garantia.css - Estilos específicos para garantia.html (optimizado para móvil con grids 2x2) */
+
+/* MAIN */
+.main {
+    min-height: 80vh;
+    padding: 40px 20px;
+}
+
+/* PAGE HEADER */
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-header h1 {
+    font-size: 42px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 18px;
+    color: var(--text-secondary);
+}
+
+/* GUARANTEE CONTENT – 4 cajas principales */
+.guarantee-content {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr)); /* desktop: 4 columnas */
+    gap: 30px;
+}
+
+/* Card principal */
+.guarantee-section {
+    background: radial-gradient(circle at top, rgba(0, 212, 255, 0.08), #1a1a1a);
+    padding: 30px 22px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid var(--border-color, #333333);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guarantee-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(0, 212, 255, 0.25);
+    border-color: var(--primary-color, #00d4ff);
+}
+
+/* Icono */
+.guarantee-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    margin-bottom: 14px;
+    color: var(--primary-color);
+    background: rgba(0, 212, 255, 0.06);
+}
+
+.guarantee-section h2 {
+    font-size: 20px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.guarantee-section p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Lista tercera caja */
+.guarantee-section ul {
+    list-style: none;
+    margin-top: 8px;
+}
+
+.guarantee-section ul li {
+    color: var(--text-color);
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+
+/* PROCESS SECTION */
+.process-section {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.process-section h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.step {
+    background-color: var(--card-bg, #1a1a1a);
+    padding: 40px 30px;
+    border-radius: 15px;
+    border: 1px solid var(--border-color, #333333);
+    transition: all 0.3s;
+}
+
+.step:hover {
+    transform: scale(1.05);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.step h3 {
+    font-size: 22px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* CONTACT GUARANTEE */
+.contact-guarantee {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    background-color: var(--card-bg, #1a1a1a);
+    padding: 50px;
+    border-radius: 15px;
+    border: 1px solid var(--primary-color);
+}
+
+.contact-guarantee h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.contact-guarantee p {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+/* Grid de contacto */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-item {
+    padding: 20px;
+}
+
+.contact-item .icon {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+    /* 2 columnas de garantía en tablet */
+    .guarantee-content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE GENERAL (≤768px): ajustes de texto */
+@media (max-width: 768px) {
+    .main {
+        padding: 30px 16px;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .process-section h2 {
+        font-size: 28px;
+        margin-bottom: 26px;
+    }
+
+    .contact-guarantee {
+        padding: 32px 20px;
+    }
+}
+
+/* MÓVIL COMPACTO (≤480px): 2x2 en ambas secciones y contacto más bonito */
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 26px;
+    }
+
+    .page-header p {
+        font-size: 14px;
+    }
+
+    /* 4 cajas principales en 2 columnas */
+    .guarantee-content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .guarantee-section {
+        padding: 18px 10px;
+        border-radius: 14px;
+    }
+
+    .guarantee-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+
+    .guarantee-section h2 {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .guarantee-section p {
+        font-size: 12px;
+    }
+
+    .guarantee-section ul li {
+        font-size: 11px;
+    }
+
+    /* Pasos 1–4 también en 2 columnas */
+    .process-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .step {
+        padding: 18px 12px;
+        border-radius: 12px;
+    }
+
+    .step-number {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .step h3 {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .step p {
+        font-size: 12px;
+    }
+
+    /* Caja "¿Necesitas ayuda?": más compacta y centrada */
+    .contact-guarantee {
+        max-width: 100%;
+        margin: 0 auto 24px;
+        padding: 22px 14px;
+        border-radius: 14px;
+    }
+
+    .contact-guarantee h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .contact-guarantee p {
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .contact-item {
+        padding: 10px 6px;
+    }
+
+    .contact-item .icon {
+        font-size: 26px;
+        margin-bottom: 4px;
+    }
+
+    .contact-item p {
+        font-size: 12px;
+    }
+}

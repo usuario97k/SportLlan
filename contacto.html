@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - SportLlan | Habla con Nosotros</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-part1">Sport</span><span class="logo-part2">Llan</span>
+                </a>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar productos...">
+                <button class="search-btn" id="searchBtn">🔍</button>
+            </div>
+            
+            <nav class="nav" id="mainNav">
+                <a href="index.html">Inicio</a>
+                <a href="categorias.html">Categorías</a>
+                <a href="productos.html">Productos</a>
+                <a href="garantia.html">Garantía</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="carrito.html" class="cart-btn">
+                    🛒 Carrito <span id="cartCount">0</span>
+                </a>
+            </nav>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <section class="page-header">
+            <h1>📞 Contacto</h1>
+            <p>Estamos aquí para ayudarte. ¡Escríbenos!</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2>Información de Contacto</h2>
+                <div class="info-item">
+                    <span class="icon">📧</span>
+                    <div>
+                        <h3>Email</h3>
+                        <p>contacto@sportllan.cl</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <span class="icon">📞</span>
+                    <div>
+                        <h3>Teléfono</h3>
+                        <p>+56 9 1234 5678</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <div>
+                        <h3>Ubicación</h3>
+                        <p>Santiago, Chile 2026</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <span class="icon">🕒</span>
+                    <div>
+                        <h3>Horario</h3>
+                        <p>Lunes a Sábado: 9am - 7pm</p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/SportLlan" target="_blank" class="social-link">📘</a>
+                        <a href="https://www.instagram.com/SportLlan" target="_blank" class="social-link">📷</a>
+                        <a href="https://www.tiktok.com/@SportLlan" target="_blank" class="social-link">🎵</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Envíanos un Mensaje</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo:</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Teléfono:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+56 9 XXXX XXXX">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Asunto:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Selecciona un asunto</option>
+                            <option value="compra">Información sobre compra</option>
+                            <option value="producto">Consulta sobre producto</option>
+                            <option value="garantia">Garantía / Devolución</option>
+                            <option value="despacho">Despacho / Entrega</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        📨 Enviar Mensaje
+                    </button>
+                </form>
+
+                <div class="form-success" id="formSuccess">
+                    <div class="success-icon">✓</div>
+                    <h3>¡Mensaje Enviado!</h3>
+                    <p>Gracias por contactarnos. Responderemos en las próximas 24 horas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>📍 Nuestra Ubicación</h2>
+            <div class="map-placeholder">
+                <p>Área de Santiago, Chile</p>
+                <p>Despacho a todo el país</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER MEJORADO (idéntico a index.html) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Columna 1: Marca -->
+            <div class="footer-section">
+                <h3>SportLlan</h3>
+                <p>Tu tienda de equipamiento deportivo en Chile</p>
+                <p>📍 Santiago, Chile 2026</p>
+            </div>
+           
+            <!-- Columna 2: Pilares -->
+            <div class="footer-section">
+                <h3>Por qué comprar aquí</h3>
+                <ul>
+                    <li>🚚 Despacho a todo Chile</li>
+                    <li>💳 Pago seguro online</li>
+                    <li>🔄 Garantía de 30 días</li>
+                    <li>📞 Atención al cliente 24/7</li>
+                    <li>⭐ Productos de calidad certificada</li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Redes sociales con íconos -->
+            <div class="footer-section">
+                <h3>Redes sociales</h3>
+                <p>Sigue a SportLlan en redes:</p>
+                <div class="footer-social-icons">
+                    <a href="https://www.instagram.com/SportLlan" target="_blank" class="social-icon instagram">
+                        <span class="social-chip">
+                            <span class="social-chip-inner">IG</span>
+                        </span>
+                        <span class="social-chip-label">Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/SportLlan" target="_blank" class="social-icon facebook">
+                        <span class="social-chip">
+                            <span class="social-chip-inner">f</span>
+                        </span>
+                        <span class="social-chip-label">Facebook</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@SportLlan" target="_blank" class="social-icon tiktok">
+                        <span class="social-chip">
+                            <span class="social-chip-inner">♪</span>
+                        </span>
+                        <span class="social-chip-label">TikTok</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna 4: Pagos + contacto -->
+            <div class="footer-section">
+                <h3>Pagos y contacto</h3>
+                <ul>
+                    <li>💳 Métodos de pago:</li>
+                </ul>
+
+                <div class="footer-payments">
+                    <div class="payment-chip webpay">
+                        <span class="payment-chip-text">Webpay</span>
+                    </div>
+                    <div class="payment-chip visa">
+                        <span class="payment-chip-text">Visa</span>
+                    </div>
+                    <div class="payment-chip mastercard">
+                        <span class="payment-chip-text">Mastercard</span>
+                    </div>
+                </div>
+
+                <ul style="margin-top:10px;">
+                    <li>📧 <a href="mailto:contacto@sportllan.cl">contacto@sportllan.cl</a></li>
+                    <li>📞 +56 9 1234 5678</li>
+                    <li>🕒 Lunes a Sábado: 9am - 7pm</li>
+                </ul>
+            </div>
+        </div>
+       
+        <div class="footer-bottom">
+            <p>&copy; 2026 SportLlan - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP MODERNO -->
+<a href="https://wa.me/56912345678?text=Hola%20SportLlan,%20quiero%20más%20información%20sobre%20los%20productos."
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chatea con nosotros por WhatsApp">
+    <div class="whatsapp-pulse">
+        <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="16" fill="#25D366"/>
+            <path fill="#ffffff" d="M21.094 18.534c-.337-.168-1.997-.986-2.305-1.095-.307-.11-.533-.168-.759.169-.225.337-.872 1.093-1.07 1.319-.198.225-.395.239-.732.071-.337-.169-1.422-.524-2.711-1.669-1.001-.894-1.676-1.997-1.878-2.333-.202-.337-.021-.518.148-.687.152-.151.337-.395.506-.592.168-.197.225-.337.337-.563.112-.225.056-.422-.028-.592-.084-.169-.759-1.837-1.042-2.517-.274-.661-.554-.571-.759-.582l-.647-.012c-.225 0-.592.084-.902.422-.31.337-1.184 1.155-1.184 2.817 0 1.662 1.212 3.272 1.381 3.497.169.225 2.391 3.653 5.796 5.12.812.351 1.443.559 1.935.715.813.26 1.552.223 2.138.136.651-.098 1.997-.818 2.279-1.607.281-.789.281-1.466.197-1.607-.084-.141-.31-.225-.647-.395z"/>
+        </svg>
+    </div>
+</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
